@@ -17,7 +17,7 @@
 body{
     /* background: url(./img/modernabstract.png);
     background-size: repeat; */
-    background-color: var(--mediumGrey);
+    background-color: whitesmoke;
 }
 
 ul{
@@ -49,6 +49,7 @@ img{
     max-width: 100%;
     height: auto;
     margin-top: 15px;
+    border-radius: 10%;
 }
 
 /* Navigation */
@@ -67,12 +68,24 @@ nav{
 nav ul li {
     display:inline ;
     padding: 0 16px;
+    box-shadow: 0 1px 2px -1px var(--darkGrey);
+    
 }
 
 nav ul li a {
     color: rgb(0, 0, 0);
 }
 
+nav li:hover {
+    color: aliceblue;
+    font-weight: 400;
+border-bottom: 1px solid black
+}
+
+.logo{
+    color: black;
+    
+}
 .mobile{
     display: none;
 } 
@@ -144,17 +157,19 @@ aside .comments,.archives{
 }
 
 header{
-    background-color: var(--darkGrey);
+    background-color: var(--white);
     color: var(--white);
     /* grid-column-start: 1;
     grid-column-end: 4; */
     grid-column-start: span 3;
+    border-radius: 10px;
 }
 
 aside{
     background-color: var(--white);
     color: var(--white);
     grid-column-start: span 1;
+    border-radius: 10px;
    
 }
 
@@ -162,15 +177,17 @@ main{
     background-color: var(--white);
     grid-column-start: span 2;
     grid-gap: 300px;
+    border-radius: 10px;
 }
 
 footer{
-    background-color: var(--mediumGrey);
+    background-color: var(--white);
     grid-column-start: span 3;
     text-align: center;
     display: flex ;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
 }
 
 
